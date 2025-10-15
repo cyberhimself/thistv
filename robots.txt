@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /*.bak$
+Allow: /
+
+Sitemap: https://cyberhimself.github.io/thistv.movies/sitemap.xml

@@ -1,0 +1,43 @@
+<header class="site-header">
+    <div class="header-left">
+      <img src="assets/logo.svg" alt="thisTV logo" class="logo-img">
+      <a style="text-decoration: none;" href="index.html"><span class="brand">thisTV</span></a>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+    </button>
+
+    <nav id="mobile-nav" class="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-inner">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="featured.html" class="nav-link">Featured</a>
+        <a href="genres.html" class="nav-link">Genres</a>
+        <!-- Movies with collapsible industry submenu for mobile -->
+        <div class="mobile-nav-group">
+          <button id="mobile-movies-toggle" class="nav-link mobile-toggle" aria-expanded="false">Movies <span class="chev">›</span></button>
+          <div id="mobile-movies-dropdown" class="mobile-dropdown" aria-hidden="true"></div>
+        </div>
+        <a href="webseries.html" class="nav-link">Web-Series</a>
+        <a href="top-imdb.html" class="nav-link">Top IMDb</a>
+      </div>
+    </nav>
+
+    <nav class="header-nav" aria-label="Main menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="featured.html" class="nav-link">Featured</a>
+      <a href="genres.html" class="nav-link">Genres</a>
+      <div class="nav-item nav-dropdown">
+        <a href="movies.html" class="nav-link"><span class="nav-label">Movies</span></a>
+        <div class="dropdown-menu" id="movies-industry-dropdown" aria-hidden="true"></div>
+      </div>
+      <a href="webseries.html" class="nav-link">Web-Series</a>
+      <a href="top-imdb.html" class="nav-link">Top IMDb</a>
+    </nav>
+
+    <div class="header-right">
+      <label class="sr-only" for="global-search">Search thisTV</label>
+      <input id="global-search" class="input-sm" placeholder="Search..." aria-label="Search thisTV">
+    </div>
+  </header>
