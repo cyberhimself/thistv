@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /*.bak$
 Allow: /
 
-Sitemap: https://cyberhimself.github.io/thistv.movies/sitemap.xml
+Sitemap: https://thistv.linkpc.net/sitemap.xml
