@@ -1,6 +1,4 @@
-User-agent: *
-Disallow: /admin/
-Disallow: /*.bak$
-Allow: /
+# robots.txt for thistv.linkpc.net
 
-Sitemap: https://thistv.linkpc.net/sitemap.xml
+User-agent: *
+Allow: / Sitemap: https://thistv.linkpc.net/sitemap.xml
