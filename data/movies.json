@@ -4906,7 +4906,6 @@
       "id": "s42",
       "type": "webseries",
       "industry" :"Hollywood",
-      "recomendation":"Featured",
       "title": "My Lady Jane (Season 01) Dual Audio {Hindi-English} Web Series 480p | 720p | 1080p WEB-DL ESub",
       "seo-title": "My Lady Jane (Season 01) Dual Audio {Hindi-English} WEB Series | ThisTV",
       "description": "Download/Watch My Lady Jane (Season 01) Dual Audio {Hindi-English} WEB Series Complete All Episodes Available in 480p & 720p & 1080p qualities. Lady Jane Grey and her husband Guildford live during the reign of Edward, son of Henry VIII. She unexpectedly finds herself crowned queen overnight and becomes the target of criminals who want her throne and her head. This series is based on Comedy, Drama, Fantasy, History, Romance.",
@@ -4916,6 +4915,21 @@
       "poster": "https://m.media-amazon.com/images/M/MV5BNmEwYjQ5MWMtZDdiOC00NTk1LWEwOWEtYjQ2NDUxNjk2YWU5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "seasons": 1,
       "link": "my-lady-jane-season-1-web-series.html"
+    },
+    {
+      "id": "s43",
+      "type": "webseries",
+      "industry" :"Hollywood",
+      "recomendation":"Featured",
+      "title": "Stranger Things (Season 1-4) Dual Audio [Hindi-English] WEB Series 480p | 720p | 1080p | 2160p WEB-DL ESub",
+      "seo-title": "Stranger Things (Season 1-4) Dual Audio [Hindi-English] WEB Series | ThisTV",
+      "description": "Download/Watch Stranger Things (Season 1-4) Dual Audio [Hindi-English] WEB Series Complete All Episodes Available in 480p & 720p & 1080p qualities. In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries. This series is based on Drama, Fantasy, Horror, Sci-Fi.",
+      "year": 2016,
+      "imdb": 8.6,
+      "genres": ["Drama","Fantasy","Horror","Sci-Fi"],
+      "poster": "https://m.media-amazon.com/images/M/MV5BMzY1YjkzYzQtMThiNC00MjcxLThjOTAtZjFkZDljOWU3ODUyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "seasons": 1,
+      "link": "stranger-things-season-1-4-web-series.html"
     }
     
     
