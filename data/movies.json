@@ -3,6 +3,7 @@
     {
       "id": "m1",
       "type": "movie",
+      "industry":"Hollywood",
       "recomendation": "Featured",
       "title": "Download The Shawshank Redemption (1994) Dual Audio [Hindi-English] Movie 480p | 720p | 1080p BluRay MSubs",
       "seo-title": "The Shawshank Redemption (1994) Dual Audio- [Hindi-English] Movie | ThisTV",
@@ -20,6 +21,7 @@
     {
       "id": "m2",
       "type": "movie",
+      "industry":"Bollywood",
       "title": "Saiyaara (2025) Hindi Movie 480p | 720p | 1080p WEB-DL ESub",
       "seo-title": "Saiyaara (2025) Hindi Movie | ThisTV",
       "year": 2025,
@@ -57,6 +59,7 @@
     {
       "id": "m3",
       "type": "movie",
+      "industry":"Bollywood",
       "recomendation": "Featured",
       "title": "Tamasha (2015) Hindi Movie 480p | 720p | 1080p BluRay ESub",
       "seo-title": "Tamasha (2015) Hindi Movie | ThisTV",
@@ -107,6 +110,7 @@
     {
       "id": "m4",
       "type": "movie",
+      "industry":"Hollywood",
       "title": "Nobody 2 (2025) Dual Audio [Hindi-English] Movie 480p | 720p | 1080p WEB-DL ESub",
       "seo-title": "Nobody 2 (2025) Dual Audio [Hindi-English] Movie | ThisTV",
       "year": 2025,
@@ -125,6 +129,7 @@
     {
       "id": "m5",
       "type": "movie",
+      "industry":"Hollywood",
       "title": "Nobody (2021) Dual Audio {Hindi-English} Movie 480p | 720p | 1080p BluRay ESub",
       "seo-title": "Nobody (2021) Dual Audio {Hindi-English} Movie | ThisTV",
       "year": 2021,
@@ -143,6 +148,7 @@
     {
       "id": "m6",
       "type": "movie",
+      "industry":"Hollywood",
       "recomendation": "Featured",
       "title": "Interstellar (2014) Dual Audio [Hindi-English] Movie 480p | 720p | 1080p | 2160p BluRay ESub",
       "seo-title": "Interstellar (2014) Dual Audio [Hindi-English] Movie | ThisTV",
@@ -162,6 +168,7 @@
     {
       "id": "m7",
       "type": "movie",
+      "industry":"Hollywood",
       "recomendation": "Featured",
       "title": "Eternal Sunshine of the Spotless Mind (2004) Dual Audio {Hindi-English} Movie 480p | 720p | 1080p BluRay ESub",
       "seo-title": "Eternal Sunshine of the Spotless Mind (2004) Dual Audio {Hindi-English} Movie | ThisTV",
@@ -181,6 +188,7 @@
     {
       "id": "m8",
       "type": "movie",
+      "industry":"Hollywood",
       "title": "Spirited Away (2001) Dual Audio {Hindi-English} Movie 480p | 720p | 1080p BluRay ESub",
       "seo-title": "Spirited Away (2001) Dual Audio {Hindi-English} Movie | ThisTV",
       "year": 2001,
@@ -201,6 +209,7 @@
     {
       "id": "m10",
       "type": "movie",
+      "industry":"Hollywood",
       "recomendation": "Featured",
       "title": "Se7en (1995) Dual Audio {Hindi-English} Movie 480p | 720p | 1080p BluRay 450MB | 1GB",
       "seo-title": "Se7en (1995) Dual Audio {Hindi-English} Movie | ThisTV",
@@ -220,6 +229,7 @@
     {
       "id": "m9",
       "type": "movie",
+      "industry":"Hollywood",
       "recomendation": "Featured",
       "title": "Inglourious Basterds (2009) Dual Audio [Hindi – English] Movie 480p | 720p | 1080p BluRay ESub",
       "seo-title": "Inglourious Basterds (2009) Dual Audio [Hindi – English] Movie | ThisTV",
@@ -256,6 +266,7 @@
     {
       "id": "m11",
       "type": "movie",
+      "industry":"Bollywood",
       "title": "Inspector Zende (2025) Multi Audio [Hindi-English-Tamil-Telugu] Movie 480p | 720p | 1080p WEB-DL MSubs",
       "seo-title": "Inspector Zende (2025) Multi Audio [Hindi-English-Tamil-Telugu] Movie | ThisTV",
       "description": "Download and Watch Inspector Zende (2025) Multi Audio [Hindi-English-Tamil-Telugu] Movie in 480p, 720p, 1080p Qualities on Your Mobile/Tablet/Computer Devices for free.",
@@ -273,6 +284,7 @@
     {
       "id": "m12",
       "type": "movie",
+      "industry":"Hollywood",
       "title": "Honey Don’t! (2025) English Movie 480p | 720p | 1080p WEB-DL ESub",
       "seo-title": "Honey Don’t! (2025) English Movie | ThisTV",
       "description": "Download and Watch Honey Don’t! (2025) English Movie in 480p, 720p, 1080p Qualities on Your Mobile/Tablet/Computer Devices for free.",
@@ -290,6 +302,7 @@
     {
       "id": "m13",
       "type": "movie",
+      "industry":"Bollywood",
       "title": "Phule (2025) Hindi Movie 480p | 720p | 1080p WEB-DL ESub",
       "seo-title": "Phule (2025) Hindi Movie | ThisTV",
       "description": "Download and Watch Phule (2025) Hindi Movie in 480p, 720p, 1080p Qualities on Your Mobile/Tablet/Computer Devices for free.",
@@ -305,6 +318,7 @@
     {
       "id": "m14",
       "type": "movie",
+      "industry":"Hollywood",
       "recomendation": "Featured",
       "title": "Vanilla Sky (2001) Dual Audio {Hindi-English} Movie 480p | 720p | 1080p BluRay",
       "seo-title": "Vanilla Sky (2001) Dual Audio {Hindi-English} Movie | ThisTV",
@@ -325,6 +339,7 @@
     {
       "id": "m15",
       "type": "movie",
+      "industry":"Hollywood",
       "title": "Big Hero 6 (2014) Dual Audio [Hindi-English] Movie 480p | 720p | 1080p | 2160p BluRay ESub",
       "seo-title": "Big Hero 6 (2014) Dual Audio [Hindi-English] Movie | ThisTV",
       "description": "Download Big Hero 6 (2014) Dual Audio [Hindi-English] Movie in High Quality 480p, 720p, 1080p For Your Mobile/Tablet/Computer and Watch For Free.",
@@ -342,6 +357,7 @@
     {
       "id": "m16",
       "type": "movie",
+      "industry":"Hollywood",
       "title": "Up (2009) Dual Audio {Hindi-English} Movie 480p | 720p | 1080p BluRay ESub",
       "seo-title": "Up (2009) Dual Audio {Hindi-English} Movie | ThisTV",
       "description": "Download Up (2009) Dual Audio {Hindi-English} Movie in High Quality 480p, 720p, 1080p For Your Mobile/Tablet/Computer and Watch For Free.",
@@ -360,6 +376,7 @@
     {
       "id": "m17",
       "type": "movie",
+      "industry":"Hollywood",
       "title": "Soul (2020) English Movie 480p | 720p | 1080p | 2160p BluRay ESub",
       "seo-title": "Soul (2020) English Movie | ThisTV",
       "description": "Download and Watch Soul (2020) English Movie in 480p, 720p, 1080p Qualities on Your Mobile/Tablet/Computer Devices for free.",
@@ -393,6 +410,7 @@
     {
       "id": "m18",
       "type": "movie",
+      "industry":"Bollywood",
       "title": "Blackmail (2018) Hindi Movie 480p | 720p | 1080p BluRay ESub",
       "seo-title": "Blackmail (2018) Hindi Movie | ThisTV",
       "description": "Download and Watch Blackmail (2018) Hindi Movie in 480p, 720p, 1080p Qualities on Your Mobile/Tablet/Computer Devices for free.",
@@ -410,6 +428,7 @@
     {
       "id": "m19",
       "type": "movie",
+      "industry":"Bollywood",
       "title": "Maalik (2025) Hindi Movie 480p | 720p | 1080p | 2160p WEB-DL ESub",
       "seo-title": "Maalik (2025) Hindi Movie | ThisTV",
       "description": "Download and Watch Maalik (2025) Hindi Movie in 480p, 720p, 1080p Qualities on Your Mobile/Tablet/Computer Devices for free.",
@@ -427,6 +446,7 @@
     {
       "id": "m20",
       "type": "movie",
+      "industry":"Hollywood",
       "title": "Klaus (2019) Dual Audio [Hindi-English] Movie 480p | 720p | 1080p WEB-DL ESub",
       "seo-title": "Klaus (2019) Dual Audio [Hindi-English] Movie | ThisTV",
       "description": "Download and Watch Klaus (2019) Dual Audio [Hindi-English] Movie in 480p, 720p, 1080p Qualities on Your Mobile/Tablet/Computer Devices for free.",
@@ -444,6 +464,7 @@
     {
       "id": "m21",
       "type": "movie",
+      "industry":"Hollywood",
       "title": "Ice Age (2002) Dual Audio {Hindi-English} Movie 480p | 720p | 1080p BluRay",
       "seo-title": "Ice Age (2002) Dual Audio {Hindi-English} Movie | ThisTV",
       "description": "Download and Watch Ice Age (2002) Dual Audio {Hindi-English} Movie in 480p, 720p, 1080p Qualities on Your Mobile/Tablet/Computer Devices for free.",
@@ -463,6 +484,7 @@
     {
       "id": "m22",
       "type": "movie",
+      "industry":"Hollywood",
       "title": "Ice Age: The Meltdown (2006) Dual Audio {Hindi-English} Movie 480p | 720p | 1080p BluRay",
       "seo-title": "Ice Age: The Meltdown (2006) Dual Audio {Hindi-English} Movie | ThisTV",
       "description": "Download and Watch Ice Age: The Meltdown (2006) Dual Audio {Hindi-English} Movie in 480p, 720p, 1080p Qualities on Your Mobile/Tablet/Computer Devices for free.",
@@ -482,6 +504,7 @@
     {
       "id": "m23",
       "type": "movie",
+      "industry":"Hollywood",
       "title": "Ice Age: Dawn of the Dinosaurs (2009) Dual Audio {Hindi-English} Movie 480p | 720p BluRay",
       "seo-title": "Ice Age: Dawn of the Dinosaurs (2009) Dual Audio {Hindi-English} Movie | ThisTV",
       "description": "Download and Watch Ice Age: Dawn of the Dinosaurs (2009) Dual Audio {Hindi-English} Movie in 480p, 720p, 1080p Qualities on Your Mobile/Tablet/Computer Devices for free.",
@@ -501,6 +524,7 @@
     {
       "id": "m24",
       "type": "movie",
+      "industry":"Hollywood",
       "title": "Ice Age: Continental Drift (2012) Dual Audio {Hindi-English} Movie 480p | 720p | 1080p BluRay",
       "seo-title": "Ice Age: Continental Drift (2012) Dual Audio {Hindi-English} Movie | ThisTV",
       "description": "Download and Watch Ice Age: Continental Drift (2012) Dual Audio {Hindi-English} Movie in 480p, 720p, 1080p Qualities on Your Mobile/Tablet/Computer Devices for free.",
@@ -520,6 +544,7 @@
     {
       "id": "m25",
       "type": "movie",
+      "industry":"Hollywood",
       "title": "Ice Age: A Mammoth Christmas (2011) Dual Audio {Hindi-English} Movie 480p | 720p | 1080p BluRay",
       "seo-title": "Ice Age: A Mammoth Christmas (2011) Dual Audio {Hindi-English} Movie | ThisTV",
       "description": "Download and Watch Ice Age: A Mammoth Christmas (2011) Dual Audio {Hindi-English} Movie in 480p, 720p, 1080p Qualities on Your Mobile/Tablet/Computer Devices for free.",
@@ -540,6 +565,7 @@
     {
       "id": "m26",
       "type": "movie",
+      "industry":"Hollywood",
       "title": "Ice Age: Collision Course (2016) Dual Audio {Hindi-English} Movie 480p | 720p | 1080p BluRay",
       "seo-title": "Ice Age: Collision Course (2016) Dual Audio {Hindi-English} Movie | ThisTV",
       "description": "Download and Watch Ice Age: Collision Course (2016) Dual Audio {Hindi-English} Movie in 480p, 720p, 1080p Qualities on Your Mobile/Tablet/Computer Devices for free.",
@@ -561,6 +587,7 @@
     {
       "id": "m27",
       "type": "movie",
+      "industry":"Hollywood",
       "title": "The Ice Age Adventures of Buck Wild (2022) English Movie 480p | 720p | 1080p WEB-DL ESub",
       "seo-title": "The Ice Age Adventures of Buck Wild (2022) English Movie | ThisTV",
       "description": "Download and Watch The Ice Age Adventures of Buck Wild (2022) English Movie in 480p, 720p, 1080p Qualities on Your Mobile/Tablet/Computer Devices for free.",
@@ -578,6 +605,7 @@
     {
       "id": "m82",
       "type": "movie",
+      "industry":"Hollywood",
       "title": "Thunderbolts* AKA *The New Avengers (2025) Dual Audio [Hindi-English] Movie 480p | 720p | 1080p | 2160p BluRay ESub",
       "seo-title": "Thunderbolts* AKA *The New Avengers (2025) Dual Audio [Hindi-English] Movie | ThisTV",
       "description": "Download and Watch Thunderbolts* AKA *The New Avengers (2025) Dual Audio [Hindi-English] Movie in 480p, 720p, 1080p Qualities on Your Mobile/Tablet/Computer Devices for free.",
@@ -1278,7 +1306,7 @@
     {
       "id": "m63",
       "type": "movie",
-      "industry": "Bollywood",
+      "industry": "South Hindi Dubbed",
       "title": "Lokah Chapter One: Chandra (2025) Multi Audio [Hindi-Tamil-Telugu-Kannada-Malayalam] Movie 480p | 720p | 1080p HDTC",
       "seo-title": "Lokah Chapter One: Chandra (2025) Multi Audio [Hindi-Tamil-Telugu-Kannada-Malayalam] Movie | ThisTV",
       "description": "Download Lokah Chapter One: Chandra (2025) Multi Audio [Hindi-Tamil-Telugu-Kannada-Malayalam] Movie in High Quality 480p, 720p, 1080p For Your Mobile/Tablet/Computer and Watch For Free.",
