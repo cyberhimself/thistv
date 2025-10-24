@@ -690,32 +690,37 @@ function initMobileMenu(){
   const hamb = document.getElementById('hamburger');
   const mnav = document.getElementById('mobile-nav');
   if(!hamb || !mnav) return;
+
   function openMenu(){
     mnav.setAttribute('aria-hidden','false');
     hamb.setAttribute('aria-expanded','true');
+    hamb.classList.add('is-active'); // added
     document.body.style.overflow = 'hidden';
-    // trap focus not implemented (keeps code simple)
   }
+
   function closeMenu(){
     mnav.setAttribute('aria-hidden','true');
     hamb.setAttribute('aria-expanded','false');
+    hamb.classList.remove('is-active'); // added
     document.body.style.overflow = '';
   }
-  hamb.addEventListener('click', (e)=>{
+
+  hamb.addEventListener('click', ()=>{
     const open = hamb.getAttribute('aria-expanded') === 'true';
     if(open) closeMenu(); else openMenu();
   });
-  // close when clicking outside the inner nav
-  mnav.addEventListener('click', (e)=>{
+
+  mnav.addEventListener('click', e=>{
     if(e.target === mnav) closeMenu();
   });
-  // close on escape
-  document.addEventListener('keydown', (e)=>{
+
+  document.addEventListener('keydown', e=>{
     if(e.key === 'Escape') closeMenu();
   });
-  // close when any mobile nav link clicked (navigate)
+
   mnav.querySelectorAll('a').forEach(a=>a.addEventListener('click', closeMenu));
 }
+
 
 // JS fallback for dropdown hover (helps if CSS hover is unreliable)
 function initHeaderDropdownHover(){
