@@ -199,10 +199,37 @@
   </nav>
 
   <!-- ===== SEARCH ===== -->
-  <div class="header-right">
-    <label class="sr-only" for="global-search">Search thisTV</label>
-    <input id="global-search" class="input-sm" placeholder="Search..." aria-label="Search thisTV">
-  </div>
+<!-- Search -->
+<div class="header-right" style="position: relative;">
+  <label class="sr-only" for="global-search">Search thisTV</label>
+  <input
+    id="global-search"
+    class="input-sm"
+    placeholder="Search..."
+    aria-label="Search thisTV"
+    style="
+      border: 2px solid #f5c518;
+      border-radius: 8px;
+      background-color: #0f0f11;
+      color: #fff;
+      padding: 8px 34px 8px 12px;
+      outline: none;
+      transition: box-shadow 0.2s ease, border-color 0.2s ease;
+    "
+  >
+  <i
+    class="fa fa-search"
+    style="
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #f5c518;
+      font-size: 16px;
+      pointer-events: none;
+    "
+  ></i>
+</div>
 </header>
 
 <!-- ===== JAVASCRIPT ===== -->
@@ -227,3 +254,41 @@
     mobileMoviesDropdown.setAttribute('aria-hidden', expanded);
   });
 </script>
+
+<style>
+  /* Highlight all search inputs site-wide */
+  #global-search,
+  .input-sm,
+  .input-lg {
+    border: 2px solid #f5c518 !important;
+    border-radius: 8px;
+    background-color: #0f0f11;
+    color: #fff;
+    outline: none;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+
+  /* Add subtle glow on focus */
+  #global-search:focus,
+  .input-sm:focus,
+  .input-lg:focus {
+    box-shadow: 0 0 10px rgba(245, 197, 24, 0.6);
+    border-color: #f5c518;
+  }
+
+  /* Optional: make placeholder text less bright for better contrast */
+  #global-search::placeholder,
+  .input-sm::placeholder,
+  .input-lg::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+</style>
+<style>
+  #global-search:focus {
+    box-shadow: 0 0 10px rgba(245, 197, 24, 0.6);
+    border-color: #f5c518;
+  }
+  #global-search::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+</style>
