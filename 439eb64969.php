@@ -9,12 +9,12 @@ class AntiAdBlock {
     /**
      * @var string
      */
-    private $zoneId = '6684129-6684130';
+    private $zoneId = '6689363-6689364';
 
     /**
      * @var string
      */
-    private $key = 'yVEOk4gGyuU12mZiTTH0gK6mSmvIRfMxyNMOkEwPLKMhArYn9ZIj8FXMAQs32hlM';
+    private $key = 'ZPtmQaT0XptjfDNYqak4eRW6FMRs57fI2NZb3RL2CVEoa2a3NL6Gu8C3HQglKQXs';
 
     /**
      * @var string
