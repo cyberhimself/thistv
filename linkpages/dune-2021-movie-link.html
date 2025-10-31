@@ -226,6 +226,28 @@
     <a href="https://fast-dl.lol/dl/4c192e" target="_blank"><button class="button button1"><i class="fa-solid fa-bolt"></i> G-Direct [Instant]</button></a>
 
 </main>
+<!-- Smart-link Ad Integration -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const adLink = "https://regulationstranger.com/vtm8u265?key=3fa29a1e08244ea960bafc45c1791997";
+
+  document.querySelectorAll("a[href]").forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      // Open first tab (the href link)
+      const mainWin = window.open(this.href, "_blank");
+
+      // Then open ad tab slightly later to avoid popup blocking
+      setTimeout(() => {
+        window.open(adLink, "_blank");
+      }, 300);
+    });
+  });
+});
+</script>
+<!-- Smart-link Ad Integration ends-->
+
 
 <script async="async" data-cfasync="false" src="//regulationstranger.com/dd5c768b5e99df249b59e248548a04fb/invoke.js"></script>
 <section id="container-dd5c768b5e99df249b59e248548a04fb"></section>
