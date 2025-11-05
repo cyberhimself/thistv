@@ -6707,7 +6707,7 @@
     {
       "id": "s44",
       "type": "webseries",
-      "industry" :"Hollywood",
+      "ott" :"Netflix",
       "title": "The Witcher (Season 1 – 4) Dual Audio [Hindi-English] NetFlix WEB Series 480p | 720p | 1080p WEB-DL ESub",
       "seo-title": "The Witcher (Season 1 – 4) Dual Audio [Hindi-English] WEB Series | ThisTV",
       "description": "Download/Watch The Witcher (Season 1 – 4) Dual Audio [Hindi-English] WEB Series Complete All Episodes Available in 480p & 720p & 1080p qualities. Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts. This series is based on Action, Adventure, Drama, Fantasy.",
@@ -6721,7 +6721,7 @@
     {
       "id": "s45",
       "type": "webseries",
-      "industry" :"Amazon Prime Video",
+      "ott" :"Amazon Prime Video",
       "title": "Paatal Lok (Season 1 – 2) Hindi WEB Series 480p | 720p | 1080p WEB-DL ESub",
       "seo-title": "Paatal Lok (Season 1 – 2) Hindi WEB Series | ThisTV",
       "description": "Download/Watch Paatal Lok (Season 1 – 2) Hindi WEB Series Complete All Episodes Available in 480p & 720p & 1080p qualities. Inspector Hathi Ram Chaudhary, the haggard, unlikely hero, investigates a high-profile murder case that leads him to remote corners of North-East India, where he battles powerful forces and personal tragedies in his pursuit of truth. This series is based on Action, Crime, Drama, Mystery, Thriller.",
@@ -6731,7 +6731,21 @@
       "poster": "https://m.media-amazon.com/images/M/MV5BOTdkYmMxMGEtYTgwYi00NjdjLWI4MTctYTg0OWZlMzU2NDk1XkEyXkFqcGc@._V1_.jpg",
       "seasons": 2,
       "link": "paatal-lok-season-1-2-web-series.html"
-    }    
+    },
+    {
+      "id": "s46",
+      "type": "webseries",
+      "ott" :"Netflix",
+      "title": "One Piece (Season 1) Multi Audio [Hindi-English-Japanese-Tamil-Telugu] Web Series 480p | 720p | 1080p WEB-DL ESub",
+      "seo-title": "One Piece (Season 1) Multi Audio [Hindi-English-Japanese-Tamil-Telugu] WEB Series | ThisTV",
+      "description": "Download/Watch One Piece (Season 1) Multi Audio [Hindi-English-Japanese-Tamil-Telugu] WEB Series Complete All Episodes Available in 480p & 720p & 1080p qualities. With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure. This series is based on Action, Adventure.",
+      "year": 2023,
+      "imdb": 8.3,
+      "genres": ["Action","Adventure","Comedy"],
+      "poster": "https://m.media-amazon.com/images/M/MV5BNDk5MDFlYjYtZjQ5ZS00ZjhkLWJkYmMtYzhmZjkyOWExY2M3XkEyXkFqcGc@._V1_FMjpg_UY720_.jpg",
+      "seasons": 1,
+      "link": "one-piece-season-1-web-series.html"
+    }
     
 
 
