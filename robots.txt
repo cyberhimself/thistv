@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # robots.txt for thistv.linkpc.net
 
 # Allow all crawlers full access to the website
@@ -11,4 +12,11 @@ Disallow: /tmp/
 Disallow: /private/
 
 # Specify the location of your sitemap
+=======
+User-agent: *
+Disallow: /admin/
+Disallow: /*.bak$
+Allow: /
+
+>>>>>>> 1b3149c88342c4f15a3c621e0073251cbab91b82
 Sitemap: https://thistv.linkpc.net/sitemap.xml
