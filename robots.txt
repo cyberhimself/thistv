@@ -1,0 +1,14 @@
+# robots.txt for thistv.linkpc.net
+
+# Allow all crawlers full access to the website
+User-agent: *
+Allow: /
+
+# Block common junk folders (if they exist)
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Specify the location of your sitemap
+Sitemap: https://thistv.linkpc.net/sitemap.xml
