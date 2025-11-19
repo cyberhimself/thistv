@@ -1,7 +1,7 @@
 import os
 
-old_domain = "https://new7.gdflix.net"
-new_domain = "https://new9.gdflix.net"
+old_domain = "https://vcloud.lol"
+new_domain = "https://vcloud.zip"
 
 def update_domains_in_html(directory):
     for root, dirs, files in os.walk(directory):
