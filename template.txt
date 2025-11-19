@@ -4,3 +4,8 @@
     <a href="" target="_blank"><button class="button button1"><i class="fa-solid fa-bolt"></i> VikingFile [Instant]</button></a>
     <a href="" target="_blank"><button class="button button1"><i class="fa-brands fa-google-drive"></i> GDTOT [G-Drive]</button></a>
     <a href="" target="_blank"><button class="button button1"><i class="fa-solid fa-file-video"></i> Gofile</button></a>
+
+# Current Domains
+https://new1.filepress.cloud
+https://vikingf1le.us.to
+https://gofile.io/d/d4IOQj
