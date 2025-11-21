@@ -1,7 +1,10 @@
 #Download Buttons
 
     <a href="" target="_blank"><button class="button button1"><i class="fa-solid fa-bolt"></i> GDFlix [Instant]</button></a>
+    <a href="" target="_blank"><button class="button button1"><i class="fa-solid fa-bolt"></i> G-Direct [Instant]</button></a>
+    <a href="" target="_blank"><button class="button button1"><i class="fa-solid fa-bolt"></i> V-Cloud [Resumable]</button></a>
     <a href="" target="_blank"><button class="button button1"><i class="fa-solid fa-bolt"></i> VikingFile [Instant]</button></a>
+    <a href="" target="_blank"><button class="button button1"><i class="fa-brands fa-google-drive"></i> FilePress [G-Drive]</button></a>
     <a href="" target="_blank"><button class="button button1"><i class="fa-brands fa-google-drive"></i> GDTOT [G-Drive]</button></a>
     <a href="" target="_blank"><button class="button button1"><i class="fa-solid fa-file-video"></i> Gofile</button></a>
 
