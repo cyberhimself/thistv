@@ -40,7 +40,7 @@ def get_imdb_poster_url(imdb_id: str) -> str:
 
 
 if __name__ == "__main__":
-    imdb_id = "tt2294449"  # Example IMDb ID
+    imdb_id = "tt1119646"  # Example IMDb ID
     poster_url = get_imdb_poster_url(imdb_id)
     if poster_url:
         print("✅ Poster URL:", poster_url)
