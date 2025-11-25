@@ -7,6 +7,7 @@
     <a href="" target="_blank"><button class="button button1"><i class="fa-brands fa-google-drive"></i> FilePress [G-Drive]</button></a>
     <a href="" target="_blank"><button class="button button1"><i class="fa-brands fa-google-drive"></i> GDTOT [G-Drive]</button></a>
     <a href="" target="_blank"><button class="button button1"><i class="fa-solid fa-file-video"></i> Gofile</button></a>
+    <a href="" target="_blank"><button class="button button1"><i class="fa-solid fa-file-video"></i> OxxFile</button></a>
 
 # Current Domains
 https://new1.filepress.cloud
