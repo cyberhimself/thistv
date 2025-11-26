@@ -1102,7 +1102,7 @@
       "genres": [
         "Drama",
         "Mystery",
-        "Thriller"
+        "Thriller","Erotic"
       ],
       "poster": "https://m.media-amazon.com/images/M/MV5BZWYwYmQzYTctMjg5Ni00NWZkLWI5NzItZGFjMDM2NDkyNGZlXkEyXkFqcGc@._V1_FMjpg_UY1378_.jpg",
       "runtime": "2h 7m",
@@ -1120,7 +1120,7 @@
       "genres": [
         "Drama",
         "Mystery",
-        "Thriller"
+        "Thriller","Erotic"
       ],
       "poster": "https://m.media-amazon.com/images/M/MV5BMTkzNzM3ODY3Nl5BMl5BanBnXkFtZTcwNzMyNDcyNA@@._V1_FMjpg_UY1023_.jpg",
       "runtime": "1h 54m",
@@ -2569,7 +2569,8 @@
         "Drama",
         "Mystery",
         "Romance",
-        "Thriller"
+        "Thriller",
+        "Erotic"
       ],
       "poster": "https://m.media-amazon.com/images/M/MV5BNWUxZTliMDgtOWVkZS00MjkwLWI5ZWUtNTZmMjhlYTFlN2I5XkEyXkFqcGc@._V1_FMjpg_UY2000_.jpg",
       "runtime": "1h 44m",
@@ -3040,7 +3041,8 @@
         "Drama",
         "Mystery",
         "Thriller",
-        "Psychological"
+        "Psychological",
+        "Erotic"
       ],
       "poster": "https://m.media-amazon.com/images/M/MV5BMTk0MDQ3MzAzOV5BMl5BanBnXkFtZTgwNzU1NzE3MjE@._V1_FMjpg_UY2048_.jpg",
       "runtime": "2h 29m",
@@ -6001,7 +6003,7 @@
       "description": "Donwload/Watch Eyes Wide Shut (1999) English Full Movie in 480p & 720p & 1080p & 2160p Qualities With High speed Google Drive link. A Manhattan doctor embarks on a bizarre, night-long odyssey after his wife's admission of unfulfilled longing. This movie is based on Drama, Mystery, Thriller.",
       "year": 1999,
       "imdb": 7.5,
-      "genres": ["Drama","Mystery","Thriller","Psychological"],
+      "genres": ["Drama","Mystery","Thriller","Psychological","Erotic"],
       "poster": "https://m.media-amazon.com/images/M/MV5BYzMzZjcyNzEtZjE2OC00Yjk3LWExOGItODdhNzhkZTdmM2M0XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_QL50_UY562_CR0,0,380,562_.jpg",
       "runtime": "2h 39m",
       "link": "eyes-wide-shut-1999-movie.html"
@@ -9085,6 +9087,20 @@
       "poster": "https://m.media-amazon.com/images/M/MV5BNWE0OTZkMjItNTU5MS00ZGRjLThkOTEtMjdjZGJjZjUxOTVkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "runtime": "1h 54m",
       "link": "ask-me-what-you-want-2024-movie.html"
+    },
+    {
+      "id": "m524",
+      "type": "movie",
+      "industry": "Adults Only (18+)",
+      "title": "The Voyeurs (2021) English DD5.1 Movie 480p | 720p | 1080p WEB-DL ESub",
+      "seo-title": "The Voyeurs (2021) English DD5.1 Full Movie | ThisTV",
+      "description": "Download/Watch The Voyeurs (2021) English DD5.1 Full Movie in 480p & 720p & 1080p & 2160p Qualities With High speed Google Drive link. Pippa and Thomas move into their dream apartment, but notice that their windows look directly into the apartment opposite. This will set in motion a chain of events that will lead to disaster. This movie is based on Drama, Mystery, Romance, Thriller.",
+      "year": 2021,
+      "imdb": 6.1,
+      "genres": ["Drama","Mystery","Romance","Thriller","Erotic"],
+      "poster": "https://m.media-amazon.com/images/M/MV5BOTQ5NDVjZjAtZDM4NC00NmQzLTkwZmYtYjQ1YjQ5NDJjZjFlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "runtime": "1h 56m",
+      "link": "the-voyeurs-2021-movie.html"
     }
     
 
