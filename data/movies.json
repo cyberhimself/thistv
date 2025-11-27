@@ -4851,21 +4851,6 @@
       "link": "my-lady-jane-season-1-web-series.html"
     },
     {
-      "id": "s43",
-      "type": "webseries",
-      "industry" :"Hollywood",
-      "recomendation":"Featured",
-      "title": "Stranger Things (Season 1-4) Dual Audio [Hindi-English] WEB Series 480p | 720p | 1080p | 2160p WEB-DL ESub",
-      "seo-title": "Stranger Things (Season 1-4) Dual Audio [Hindi-English] WEB Series | ThisTV",
-      "description": "Download/Watch Stranger Things (Season 1-4) Dual Audio [Hindi-English] WEB Series Complete All Episodes Available in 480p & 720p & 1080p qualities. In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries. This series is based on Drama, Fantasy, Horror, Sci-Fi.",
-      "year": 2016,
-      "imdb": 8.6,
-      "genres": ["Drama","Fantasy","Horror","Sci-Fi"],
-      "poster": "https://m.media-amazon.com/images/M/MV5BMzY1YjkzYzQtMThiNC00MjcxLThjOTAtZjFkZDljOWU3ODUyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-      "seasons": 1,
-      "link": "stranger-things-season-1-4-web-series.html"
-    },
-    {
       "id": "m252",
       "type": "movie",
       "industry": "Bollywood",
@@ -9131,7 +9116,7 @@
       "link": "dude-2025-movie.html"
     },
     {
-      "id": "m526",
+      "id": "m527",
       "type": "movie",
       "industry": "Marathi",
       "title": "Subhedar (2023) Dual Audio [Hindi-Marathi] Movie 480p | 720p | 1080p WEB-DL ESub",
@@ -9143,6 +9128,35 @@
       "poster": "https://m.media-amazon.com/images/M/MV5BMmU4YmI4M2EtNDMzMy00YTA2LWI5NDItNGJlNzgyZTAxZDc5XkEyXkFqcGc@._V1_FMjpg_UY576_.jpg",
       "runtime": "2h 34m",
       "link": "subhedar-2023-movie.html"
+    },
+    {
+      "id": "m528",
+      "type": "movie",
+      "industry": "Marathi",
+      "title": "Farzand (2018) Dual Audio [Hindi-Marathi] Movie 480p | 720p | 1080p WEB-DL ESub",
+      "seo-title": "Farzand (2018) Dual Audio [Hindi-Marathi] Full Movie | ThisTV",
+      "description": "Download/Watch Farzand (2018) Dual Audio [Hindi-Marathi] Full Movie in 480p & 720p & 1080p & 2160p Qualities With High speed Google Drive link. Farzand follows the story of warrior Kondaji Farzand, who along with 60 warriors defeated 2500 soldiers of the enemy to win the Panhala fort in just three and half hours in 1673. This movie is based on Action, Drama, History, War.",
+      "year": 2018,
+      "imdb": 8.1,
+      "genres": ["Action","Drama","History","War"],
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjI3YjdmYzQtN2I1Yi00NGYwLWJmMTgtNGI2OWQzNGIwOGYzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "runtime": "2h 21m",
+      "link": "farzand-2018-movie.html"
+    },
+    {
+      "id": "s43",
+      "type": "webseries",
+      "industry" :"Hollywood",
+      "recomendation":"Featured",
+      "title": "Stranger Things (Season 1-5) Dual Audio [Hindi-English] WEB Series 480p | 720p | 1080p | 2160p WEB-DL ESub",
+      "seo-title": "Stranger Things (Season 1-5) Dual Audio [Hindi-English] WEB Series | ThisTV",
+      "description": "Download/Watch Stranger Things (Season 1-5) Dual Audio [Hindi-English] WEB Series Complete All Episodes Available in 480p & 720p & 1080p qualities. In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries. This series is based on Drama, Fantasy, Horror, Sci-Fi.",
+      "year": 2016,
+      "imdb": 8.6,
+      "genres": ["Drama","Fantasy","Horror","Sci-Fi"],
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjRiMTA4NWUtNmE0ZC00NGM0LWJhMDUtZWIzMDM5ZDIzNTg3XkEyXkFqcGc@._V1_.jpg",
+      "seasons": 5,
+      "link": "stranger-things-season-1-5-web-series.html"
     }
     
 
