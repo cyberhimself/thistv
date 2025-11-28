@@ -1129,7 +1129,7 @@
     {
       "id": "m53",
       "type": "movie",
-      "industry": "Hollywood",
+      "industry": "Adults Only (18+)",
       "title": "Cruel Intentions (1999) English Movie 480p | 720p | 1080p BluRay ESub",
       "seo-title": "Cruel Intentions (1999) English Movie | ThisTV",
       "description": "Download and Watch Cruel Intentions (1999) English Movie in 480p, 720p, 1080p Qualities on Your Mobile/Tablet/Computer Devices for free.",
@@ -9440,7 +9440,7 @@
       "link": "mcguffin-2025-movie.html"
     },
     {
-      "id": "m547",
+      "id": "m548",
       "type": "movie",
       "industry": "Adults Only (18+)",
       "title": "365 Days (2020) Dual Audio [Hindi-English] Movie 480p | 720p | 1080p WEB-DL ESub",
@@ -9452,6 +9452,20 @@
       "poster": "https://m.media-amazon.com/images/M/MV5BN2Q1NmVlYmItMDBkZi00NmJiLWFkNjctNmI2YjRkZjI3NTNkXkEyXkFqcGc@._V1_.jpg",
       "runtime": "1h 54m",
       "link": "365-days-2020-movie.html"
+    },
+    {
+      "id": "m549",
+      "type": "movie",
+      "industry": "Adults Only (18+)",
+      "title": "Lady Chatterley’s Lover (2022) UNRATED Dual Audio [Hindi-English] Movie 480p | 720p | 1080p WEB-DL ESub",
+      "seo-title": "Lady Chatterley’s Lover (2022) UNRATED Dual Audio [Hindi-English] Full Movie | ThisTV",
+      "description": "Download/Watch Lady Chatterley’s Lover (2022) UNRATED Dual Audio [Hindi-English] Full Movie in 480p & 720p & 1080p & 2160p Qualities With High speed Google Drive link. An unhappily married aristocrat begins a torrid affair with the gamekeeper on her husband's country estate. This movie is based on Drama, Romance.",
+      "year": 2022,
+      "imdb": 6.6,
+      "genres": ["Drama","Romance","Erotic"],
+      "poster": "https://m.media-amazon.com/images/M/MV5BMDM4MjI3ZjEtMzhkYS00OWUyLTk0NTItODM0NTEwNjk2ZDkzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "runtime": "2h 6m",
+      "link": "lady-chatterleys-lover-2022-movie.html"
     }
     
 
