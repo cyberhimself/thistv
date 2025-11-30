@@ -1,41 +1,43 @@
 import os
+import re
 
-old_code = "<script type='text/javascript' src='//intimidatingsideway.com/ac/eb/fc/acebfc9fa5b1cc2b325c4c5449b1809d.js'></script>"
+# The meta tag to insert
+META_TAG = '<meta name="referrer" content="no-referrer-when-downgrade" />'
 
-new_code = """<script>
-(function(zftz){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = zftz || {};
-s.src = "//weepylack.com/bwX.VrsNdGGUlR0CYKWwcI/GeTmA9luFZ/UclpkPPBTVYw3mMVT/cowvMKjDA/txNdjLcox/Noz-AcymMSQl";
-s.async = true;
-s.referrerPolicy = 'no-referrer-when-downgrade';
-l.parentNode.insertBefore(s, l);
-})({})
-</script>
-"""
+def process_html_file(file_path):
+    # Read file
+    with open(file_path, 'r', encoding='utf-8') as f:
+        content = f.read()
 
-# Folder where your project is located
-root = "."
+    # Check for <head> tag
+    match = re.search(r"<head[^>]*>", content, re.IGNORECASE)
+    if not match:
+        print(f"Skipped (no <head>): {file_path}")
+        return
 
-for subdir, dirs, files in os.walk(root):
-    for file in files:
-        if file.endswith(".html"):
-            file_path = os.path.join(subdir, file)
+    # Skip if meta already exists
+    if META_TAG in content:
+        print(f"Skipped (already added): {file_path}")
+        return
 
-            with open(file_path, "r", encoding="utf-8") as f:
-                content = f.read()
+    # Inject meta tag right after <head>
+    insert_pos = match.end()
+    updated_content = content[:insert_pos] + "\n    " + META_TAG + content[insert_pos:]
 
-            # Skip if the old script is not present
-            if old_code not in content:
-                continue
+    # Write back to file
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.write(updated_content)
 
-            updated = content.replace(old_code, new_code)
+    print(f"Updated: {file_path}")
 
-            with open(file_path, "w", encoding="utf-8") as f:
-                f.write(updated)
 
-            print(f"Updated: {file_path}")
+def scan_directory(directory):
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            if file.lower().endswith(".html"):
+                process_html_file(os.path.join(root, file))
 
-print("Done!")
+
+if __name__ == "__main__":
+    # Change "." to another folder path if needed
+    scan_directory(".")
