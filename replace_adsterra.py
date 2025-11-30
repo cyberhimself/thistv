@@ -1,43 +1,41 @@
 import os
 
-# -------- CONFIG --------
-old_code = "<script type='text/javascript' src='//intimidatingsideway.com/62/22/f2/6222f2cce59d808691ba1fd0ae7c016f.js'></script>"
+old_code = "<script type='text/javascript' src='//intimidatingsideway.com/ac/eb/fc/acebfc9fa5b1cc2b325c4c5449b1809d.js'></script>"
 
 new_code = """<script>
-(function(rpz){
+(function(zftz){
 var d = document,
     s = d.createElement('script'),
     l = d.scripts[d.scripts.length - 1];
-s.settings = rpz || {};
-s.src = "//mediumdirt.com/c.D/9R6/bN2L5_l_SnWSQ/9kNAjqYr4yOsTmMb2jMNyy0Z2aN/j_gY5PM/zxY/0Y";
+s.settings = zftz || {};
+s.src = "//weepylack.com/bwX.VrsNdGGUlR0CYKWwcI/GeTmA9luFZ/UclpkPPBTVYw3mMVT/cowvMKjDA/txNdjLcox/Noz-AcymMSQl";
 s.async = true;
 s.referrerPolicy = 'no-referrer-when-downgrade';
 l.parentNode.insertBefore(s, l);
 })({})
-</script>"""
-# ------------------------
+</script>
+"""
 
+# Folder where your project is located
+root = "."
 
-def replace_in_html_files(root_folder="."):
-    for root, dirs, files in os.walk(root_folder):
-        for file in files:
-            if file.lower().endswith(".html"):
-                file_path = os.path.join(root, file)
+for subdir, dirs, files in os.walk(root):
+    for file in files:
+        if file.endswith(".html"):
+            file_path = os.path.join(subdir, file)
 
-                with open(file_path, "r", encoding="utf-8") as f:
-                    content = f.read()
+            with open(file_path, "r", encoding="utf-8") as f:
+                content = f.read()
 
-                if old_code not in content:
-                    print(f"⏩ No match found, skipped: {file_path}")
-                    continue
+            # Skip if the old script is not present
+            if old_code not in content:
+                continue
 
-                new_content = content.replace(old_code, new_code)
+            updated = content.replace(old_code, new_code)
 
-                with open(file_path, "w", encoding="utf-8") as f:
-                    f.write(new_content)
+            with open(file_path, "w", encoding="utf-8") as f:
+                f.write(updated)
 
-                print(f"✔ Updated: {file_path}")
+            print(f"Updated: {file_path}")
 
-
-# Run on the current folder
-replace_in_html_files(".")
+print("Done!")
