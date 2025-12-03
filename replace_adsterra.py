@@ -1,43 +1,48 @@
 import os
-import re
 
-# The meta tag to insert
-META_TAG = '<meta name="referrer" content="no-referrer-when-downgrade" />'
+old_code = """<script>
+(function(krqg){
+var d = document,
+    s = d.createElement('script'),
+    l = d.scripts[d.scripts.length - 1];
+s.settings = krqg || {};
+s.src = "\/\/weepylack.com\/bUX-Vms.dJG\/l\/0wYbWLcl\/TeTmI9cuaZ\/UPl\/kSPLTwYR2SODTuUlzZNJzsYotyNBjxY\/5ENdTfM\/3sNiww";
+s.async = true;
+s.referrerPolicy = 'no-referrer-when-downgrade';
+l.parentNode.insertBefore(s, l);
+})({})
+</script>"""
 
-def process_html_file(file_path):
-    # Read file
-    with open(file_path, 'r', encoding='utf-8') as f:
-        content = f.read()
+new_code = """<script>
+(function(jdby){
+var d = document,
+    s = d.createElement('script'),
+    l = d.scripts[d.scripts.length - 1];
+s.settings = jdby || {};
+s.src = "\/\/scrawny-affair.com\/bbX.VgskdlGnlA0WYVWEc-\/Pe\/mS9_ucZ\/UJlOk\/PJTwYf2GObTSU\/zYN\/z\/YythN\/jSYf5HN\/TEMb3BN\/wq";
+s.async = true;
+s.referrerPolicy = 'no-referrer-when-downgrade';
+l.parentNode.insertBefore(s, l);
+})({})
+</script>"""
 
-    # Check for <head> tag
-    match = re.search(r"<head[^>]*>", content, re.IGNORECASE)
-    if not match:
-        print(f"Skipped (no <head>): {file_path}")
-        return
+# Folder to scan (current folder)
+root_folder = "."
 
-    # Skip if meta already exists
-    if META_TAG in content:
-        print(f"Skipped (already added): {file_path}")
-        return
+for subdir, dirs, files in os.walk(root_folder):
+    for filename in files:
+        if filename.lower().endswith(".html"):
+            filepath = os.path.join(subdir, filename)
 
-    # Inject meta tag right after <head>
-    insert_pos = match.end()
-    updated_content = content[:insert_pos] + "\n    " + META_TAG + content[insert_pos:]
+            with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
+                content = f.read()
 
-    # Write back to file
-    with open(file_path, 'w', encoding='utf-8') as f:
-        f.write(updated_content)
+            if old_code in content:
+                content = content.replace(old_code, new_code)
 
-    print(f"Updated: {file_path}")
+                with open(filepath, "w", encoding="utf-8") as f:
+                    f.write(content)
 
-
-def scan_directory(directory):
-    for root, dirs, files in os.walk(directory):
-        for file in files:
-            if file.lower().endswith(".html"):
-                process_html_file(os.path.join(root, file))
-
-
-if __name__ == "__main__":
-    # Change "." to another folder path if needed
-    scan_directory(".")
+                print(f"Updated: {filepath}")
+            else:
+                print(f"Skipped (no match): {filepath}")

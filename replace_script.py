@@ -1,8 +1,8 @@
 import os
 
 # Define the old and new domains
-old_domain = "https://moviesapi.to"
-new_domain = "https://moviesapi.club"
+old_domain = "weepylack.com"
+new_domain = "mediumdirt.com"
 
 # Traverse through all directories and files
 for root, dirs, files in os.walk("."):
