@@ -2,7 +2,7 @@ import os
 
 # Define the old and new domains
 old_domain = "weepylack.com"
-new_domain = "mediumdirt.com"
+new_domain = "scrawny-affair.com"
 
 # Traverse through all directories and files
 for root, dirs, files in os.walk("."):

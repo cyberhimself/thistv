@@ -1,12 +1,12 @@
 import os
 
 old_code = """<script>
-(function(krqg){
+(function(qvsayd){
 var d = document,
     s = d.createElement('script'),
     l = d.scripts[d.scripts.length - 1];
-s.settings = krqg || {};
-s.src = "\/\/weepylack.com\/bUX-Vms.dJG\/l\/0wYbWLcl\/TeTmI9cuaZ\/UPl\/kSPLTwYR2SODTuUlzZNJzsYotyNBjxY\/5ENdTfM\/3sNiww";
+s.settings = qvsayd || {};
+s.src = "\/\/weepylack.com\/bnX\/V\/sFd.GRlG0_YDWvcj\/jeUma9AuwZ\/UxlFkePiTaYx2\/OEDtkn0MMWDCEBttNIj\/Y\/4QOZTAQCwYMhgg";
 s.async = true;
 s.referrerPolicy = 'no-referrer-when-downgrade';
 l.parentNode.insertBefore(s, l);
@@ -14,12 +14,12 @@ l.parentNode.insertBefore(s, l);
 </script>"""
 
 new_code = """<script>
-(function(jdby){
+(function(jlup){
 var d = document,
     s = d.createElement('script'),
     l = d.scripts[d.scripts.length - 1];
-s.settings = jdby || {};
-s.src = "\/\/scrawny-affair.com\/bbX.VgskdlGnlA0WYVWEc-\/Pe\/mS9_ucZ\/UJlOk\/PJTwYf2GObTSU\/zYN\/z\/YythN\/jSYf5HN\/TEMb3BN\/wq";
+s.settings = jlup || {};
+s.src = "\/\/scrawny-affair.com\/b.XjV\/sUdYGlli0HYPWqcC\/gecmj9SuYZJUslWk\/PuT_Y\/2qOIDvkm0bMuDvEwtmNRjZYq4aONTjQTwAM\/gn";
 s.async = true;
 s.referrerPolicy = 'no-referrer-when-downgrade';
 l.parentNode.insertBefore(s, l);
