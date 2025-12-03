@@ -1,8 +1,8 @@
 import os
 
 # Define the old and new domains
-old_domain = "weepylack.com"
-new_domain = "scrawny-affair.com"
+old_domain = "https://otieu.com/4/10147296"
+new_domain = "https://intimidatingsideway.com/vtm8u265?key=3fa29a1e08244ea960bafc45c1791997"
 
 # Traverse through all directories and files
 for root, dirs, files in os.walk("."):
