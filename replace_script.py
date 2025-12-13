@@ -1,8 +1,8 @@
 import os
 
 # Define the old and new domains
-old_domain = "fxlinks.fun"
-new_domain = "fxlinks.rest"
+old_domain = "new9.gdflix.net"
+new_domain = "new10.gdflix.net"
 
 # Traverse through all directories and files
 for root, dirs, files in os.walk("."):
