@@ -1,8 +1,8 @@
 import os
 
 # Define the old and new domains
-old_domain = "new9.gdflix.net"
-new_domain = "new10.gdflix.net"
+old_domain = "new1.filepress.cloud"
+new_domain = "new2.filepress.cloud"
 
 # Traverse through all directories and files
 for root, dirs, files in os.walk("."):
