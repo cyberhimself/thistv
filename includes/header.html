@@ -173,15 +173,14 @@
         <button id="mobile-movies-toggle" class="mobile-toggle" aria-expanded="false">
           Movies <span class="chev">›</span>
         </button>
-        <div id="mobile-movies-dropdown" class="mobile-dropdown" aria-hidden="true">
-          <a href="movies.html">All Movies</a>
-          <a href="bollywood.html">Bollywood</a>
-          <a href="hollywood.html">Hollywood</a>
-          <a href="south.html">South Indian</a>
-        </div>
+        <div id="mobile-movies-dropdown" class="mobile-dropdown" aria-hidden="true"></div>
       </div>
-
-      <a href="webseries.html" class="nav-link">Web-Series</a>
+      <div class="mobile-nav-group">
+        <button id="mobile-webseries-toggle" class="mobile-toggle" aria-expanded="false">
+          Web-Series <span class="chev">›</span>
+        </button>
+        <div id="mobile-webseries-dropdown" class="mobile-dropdown" aria-hidden="true"></div>
+      </div>
       <a href="top-imdb.html" class="nav-link">Top IMDb</a>
     </div>
   </nav>
@@ -195,7 +194,10 @@
       <a href="movies.html" class="nav-link"><span class="nav-label">Movies</span></a>
       <div class="dropdown-menu" id="movies-industry-dropdown" aria-hidden="true"></div>
     </div>
-    <a href="webseries.html" class="nav-link">Web-Series</a>
+    <div class="nav-item nav-dropdown">
+      <a href="webseries.html" class="nav-link"><span class="nav-label">Web-Series</span></a>
+      <div class="dropdown-menu" id="webseries-ott-dropdown" aria-hidden="true"></div>
+    </div>
     <a href="top-imdb.html" class="nav-link">Top IMDb</a>
   </nav>
 
@@ -239,6 +241,8 @@
   const mobileNav = document.getElementById('mobile-nav');
   const mobileMoviesToggle = document.getElementById('mobile-movies-toggle');
   const mobileMoviesDropdown = document.getElementById('mobile-movies-dropdown');
+  const mobileWebseriesToggle = document.getElementById('mobile-webseries-toggle');
+  const mobileWebseriesDropdown = document.getElementById('mobile-webseries-dropdown');
 
   // Toggle mobile nav
   hamburger.addEventListener('click', () => {
@@ -250,9 +254,26 @@
   // Toggle "Movies" dropdown in mobile nav
   mobileMoviesToggle.addEventListener('click', () => {
     const expanded = mobileMoviesToggle.getAttribute('aria-expanded') === 'true';
+    // Always close webseries dropdown when movies toggled
+    mobileWebseriesDropdown.classList.remove('open');
+    mobileWebseriesDropdown.setAttribute('aria-hidden', 'true');
+    mobileWebseriesToggle.setAttribute('aria-expanded', 'false');
+    // Toggle movies dropdown
     mobileMoviesToggle.setAttribute('aria-expanded', !expanded);
     mobileMoviesDropdown.classList.toggle('open', !expanded);
     mobileMoviesDropdown.setAttribute('aria-hidden', expanded);
+  });
+  // Toggle "Web-Series" dropdown in mobile nav
+  mobileWebseriesToggle.addEventListener('click', () => {
+    const expanded = mobileWebseriesToggle.getAttribute('aria-expanded') === 'true';
+    // Always close movies dropdown when webseries toggled
+    mobileMoviesDropdown.classList.remove('open');
+    mobileMoviesDropdown.setAttribute('aria-hidden', 'true');
+    mobileMoviesToggle.setAttribute('aria-expanded', 'false');
+    // Toggle webseries dropdown
+    mobileWebseriesToggle.setAttribute('aria-expanded', !expanded);
+    mobileWebseriesDropdown.classList.toggle('open', !expanded);
+    mobileWebseriesDropdown.setAttribute('aria-hidden', expanded);
   });
 </script>
 

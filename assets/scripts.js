@@ -82,8 +82,114 @@ document.addEventListener('DOMContentLoaded', () => {
     // render featured page if present
     if(typeof renderFeaturedPage === 'function') renderFeaturedPage(data);
     // populate movies industry dropdown in header
-    try{ populateMoviesIndustryDropdown(data); }catch(e){/* ignore */}
-    try{ populateMobileMoviesDropdown(data); }catch(e){/* ignore */}
+    try{ populateMoviesIndustryDropdown(data); }catch(e){}
+    try{ populateMobileMoviesDropdown(data); }catch(e){}
+    // populate webseries ott dropdown in header
+    try{ populateWebseriesOttDropdown(data); }catch(e){}
+    try{ populateMobileWebseriesDropdown(data); }catch(e){}
+  // Populate Webseries OTT dropdown in header
+  function populateWebseriesOttDropdown(data){
+    if(!data || !Array.isArray(data.items)) return;
+    const container = document.getElementById('webseries-ott-dropdown');
+    if(!container) return;
+    // Build list of OTT platforms present in the dataset
+    const set = new Set();
+    data.items.forEach(it => { if(it && it.type === 'webseries' && it.ott) set.add(it.ott); });
+    const otts = Array.from(set).sort();
+    // Render each ott link (no "All" option)
+    const html = otts.map(ott => `<a href="webseries.html?ott=${encodeURIComponent(ott)}" data-ott="${escapeHtml(ott)}">${escapeHtml(ott)}</a>`).join('\n');
+    container.innerHTML = html;
+    // Attach click handlers for SPA-like behavior on webseries page
+    function markDesktopActive(ott){
+      container.querySelectorAll('a').forEach(el => el.classList.toggle('active', el.getAttribute('data-ott') === ott));
+    }
+    container.querySelectorAll('a[data-ott]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const ott = a.getAttribute('data-ott');
+        if(location.pathname.endsWith('/webseries.html') || location.pathname.endsWith('webseries.html')){
+          e.preventDefault();
+          const url = new URL(location.href);
+          url.searchParams.set('ott', ott);
+          history.pushState({}, '', url);
+          if(window._TV_DATA) renderWebseriesPage(window._TV_DATA);
+        }
+        markDesktopActive(ott);
+      });
+    });
+    // mark initial active based on URL
+    try{ const cur = (new URL(location.href)).searchParams.get('ott'); if(cur) markDesktopActive(cur); }catch(e){}
+  }
+
+  // Populate mobile webseries dropdown and wire toggle behavior
+  function populateMobileWebseriesDropdown(data){
+    if(!data || !Array.isArray(data.items)) return;
+    const mobileContainer = document.getElementById('mobile-webseries-dropdown');
+    const toggle = document.getElementById('mobile-webseries-toggle');
+    if(!mobileContainer || !toggle) return;
+    // same ott list
+    const set = new Set();
+    data.items.forEach(it => { if(it && it.type === 'webseries' && it.ott) set.add(it.ott); });
+    const otts = Array.from(set).sort();
+    // Add an "All Web-Series" option at the top for mobile which navigates to webseries.html with no ott param
+    const allHtml = `<a href="webseries.html" data-ott="all">All Web-Series</a>`;
+    mobileContainer.innerHTML = allHtml + '\n' + otts.map(ott => `<a href="webseries.html?ott=${encodeURIComponent(ott)}" data-ott="${escapeHtml(ott)}">${escapeHtml(ott)}</a>`).join('\n');
+    // toggle behavior
+    toggle.addEventListener('click', (e) => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      // Always close movies dropdown when webseries toggled
+      const moviesDropdown = document.getElementById('mobile-movies-dropdown');
+      const moviesToggle = document.getElementById('mobile-movies-toggle');
+      if(moviesDropdown) moviesDropdown.classList.remove('open');
+      if(moviesDropdown) moviesDropdown.setAttribute('aria-hidden','true');
+      if(moviesToggle) moviesToggle.setAttribute('aria-expanded','false');
+      // Toggle webseries dropdown
+      toggle.setAttribute('aria-expanded', String(!open));
+      if(open){
+        mobileContainer.classList.remove('open');
+        mobileContainer.setAttribute('aria-hidden','true');
+      } else {
+        mobileContainer.classList.add('open');
+        mobileContainer.setAttribute('aria-hidden','false');
+      }
+    });
+    // clicking a mobile ott link navigates (or SPA-like behavior)
+    mobileContainer.querySelectorAll('a[data-ott]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const ott = a.getAttribute('data-ott');
+        // If the clicked item is the All Web-Series link, navigate to webseries.html without an ott param
+        if(ott === 'all'){
+          if(!(location.pathname.endsWith('/webseries.html') || location.pathname.endsWith('webseries.html'))){
+            return;
+          }
+          e.preventDefault();
+          const url = new URL(location.href);
+          url.searchParams.delete('ott');
+          history.pushState({}, '', url);
+          if(window._TV_DATA) renderWebseriesPage(window._TV_DATA);
+        } else {
+          if(location.pathname.endsWith('/webseries.html') || location.pathname.endsWith('webseries.html')){
+            e.preventDefault();
+            const url = new URL(location.href);
+            url.searchParams.set('ott', ott);
+            history.pushState({}, '', url);
+            if(window._TV_DATA) renderWebseriesPage(window._TV_DATA);
+          }
+        }
+        mobileContainer.querySelectorAll('a').forEach(el => el.classList.toggle('active', el.getAttribute('data-ott') === ott));
+        mobileContainer.classList.remove('open');
+        mobileContainer.setAttribute('aria-hidden','true');
+        toggle.setAttribute('aria-expanded','false');
+        const mnav = document.getElementById('mobile-nav');
+        if(mnav && mnav.getAttribute('aria-hidden') === 'false'){
+          mnav.setAttribute('aria-hidden','true');
+          const hamb = document.getElementById('hamburger');
+          if(hamb) hamb.setAttribute('aria-expanded','false');
+        }
+      });
+    });
+    // set initial active based on URL
+    try{ const cur = (new URL(location.href)).searchParams.get('ott'); if(cur){ mobileContainer.querySelectorAll('a').forEach(el => el.classList.toggle('active', el.getAttribute('data-ott') === cur)); } }catch(e){}
+  }
   });
 
   // bindModalEvents(); // disabled: using direct card navigation now
@@ -93,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function enhancePerformance(){
   // register service worker if available
   if('serviceWorker' in navigator){
-    try{ navigator.serviceWorker.register('/assets/sw.js', { scope: '/' }).catch(()=>{}); }catch(e){}
+    try{ navigator.serviceWorker.register('/assets/sw.js', { scope: '/assets/' }).catch(()=>{}); }catch(e){}
   }
 
   // prefer the minified stylesheet when supported
@@ -308,6 +414,13 @@ function populateMobileMoviesDropdown(data){
   // toggle behavior
   toggle.addEventListener('click', (e) => {
     const open = toggle.getAttribute('aria-expanded') === 'true';
+    // Always close webseries dropdown when movies toggled
+    const webseriesDropdown = document.getElementById('mobile-webseries-dropdown');
+    const webseriesToggle = document.getElementById('mobile-webseries-toggle');
+    if(webseriesDropdown) webseriesDropdown.classList.remove('open');
+    if(webseriesDropdown) webseriesDropdown.setAttribute('aria-hidden','true');
+    if(webseriesToggle) webseriesToggle.setAttribute('aria-expanded','false');
+    // Toggle movies dropdown
     toggle.setAttribute('aria-expanded', String(!open));
     if(open){
       mobileContainer.classList.remove('open');
@@ -430,7 +543,67 @@ function renderMoviesPage(data){
 function renderWebseriesPage(data){
   const grid = document.getElementById('ws-grid');
   if(!grid) return;
-  renderPaginatedGrid({containerId: 'ws-grid', items: data.items.filter(i=>i.type==='webseries'), itemsPerPage: 15});
+  const searchInput = document.getElementById('ws-search');
+  const genreSelect = document.getElementById('ws-genre');
+  const ottSelect = document.getElementById('ws-ott');
+  const allWebseries = data.items.filter(i=>i.type==='webseries');
+
+  // Gather genres
+  function gatherGenres(items) {
+    const s = new Set();
+    items.forEach(it => (it.genres||[]).forEach(g => s.add(g)));
+    return Array.from(s).sort();
+  }
+  // Gather OTT platforms
+  function gatherOtt(items) {
+    const s = new Set();
+    items.forEach(it => { if(it.ott) s.add(it.ott); });
+    return Array.from(s).sort();
+  }
+
+  // Populate genre select
+  const genres = gatherGenres(allWebseries).filter(g=>g);
+  if(genreSelect) {
+    genreSelect.innerHTML = `<option value="all">All genres</option>` + genres.map(g=>`<option value="${escapeHtml(g)}">${escapeHtml(g)}</option>`).join('');
+  }
+  // Populate OTT select
+  const otts = gatherOtt(allWebseries).filter(o=>o);
+  if(ottSelect) {
+    ottSelect.innerHTML = `<option value="all">All OTT Platforms</option>` + otts.map(o=>`<option value="${escapeHtml(o)}">${escapeHtml(o)}</option>`).join('');
+  }
+
+  function doRender(){
+    let items = allWebseries.slice();
+    // read ott from query param if present
+    const url = new URL(location.href);
+    const ottParam = url.searchParams.get('ott');
+    // search filter (by title)
+    const q = searchInput ? (searchInput.value || '').trim().toLowerCase() : '';
+    if(q){
+      items = items.filter(i => (i.title || '').toLowerCase().includes(q));
+    }
+    // genre filter
+    if(genreSelect && genreSelect.value !== 'all'){
+      items = items.filter(i => i.genres && i.genres.includes(genreSelect.value));
+    }
+    // ott filter (from dropdown or URL param)
+    let ottValue = ottSelect && ottSelect.value !== 'all' ? ottSelect.value : null;
+    if(ottParam && ottParam !== 'all') ottValue = ottParam;
+    if(ottValue){
+      items = items.filter(i => i.ott === ottValue);
+      if(ottSelect) ottSelect.value = ottValue;
+    } else if(ottSelect) {
+      ottSelect.value = 'all';
+    }
+    renderPaginatedGrid({containerId: 'ws-grid', items: items, itemsPerPage: 15});
+  }
+
+  // bind events
+  if(searchInput) searchInput.addEventListener('input', doRender);
+  if(genreSelect) genreSelect.addEventListener('change', doRender);
+  if(ottSelect) ottSelect.addEventListener('change', doRender);
+
+  doRender();
 }
 
 /* ----- TOP IMDb ----- */
@@ -650,12 +823,13 @@ async function loadSharedHeader(){
     setTimeout(() => {
       initMobileMenu();
       bindHeaderSearch();
-
       // ✅ Load footer only after header has finished
       // populate movies industry dropdown if data already loaded (fix header/data race)
-  try{ if(window._TV_DATA) populateMoviesIndustryDropdown(window._TV_DATA); }catch(e){}
-  try{ if(window._TV_DATA) populateMobileMoviesDropdown(window._TV_DATA); }catch(e){}
-      // init header dropdown hover fallback
+      try{ if(window._TV_DATA) populateMoviesIndustryDropdown(window._TV_DATA); }catch(e){}
+      try{ if(window._TV_DATA) populateMobileMoviesDropdown(window._TV_DATA); }catch(e){}
+      try{ if(window._TV_DATA) populateWebseriesOttDropdown(window._TV_DATA); }catch(e){}
+      try{ if(window._TV_DATA) populateMobileWebseriesDropdown(window._TV_DATA); }catch(e){}
+      // Always initialize header dropdown hover fallback
       try{ initHeaderDropdownHover(); }catch(e){}
       loadSharedFooter();
     }, 0);
@@ -665,6 +839,13 @@ async function loadSharedHeader(){
 }
 
 document.addEventListener('DOMContentLoaded', loadSharedHeader);
+// Always re-initialize dropdown hover after header is loaded (for static and dynamic headers)
+// Always re-initialize dropdown hover after header is loaded and after navigation events
+function ensureHeaderDropdownHover(){
+  setTimeout(() => { try{ initHeaderDropdownHover(); }catch(e){} }, 0);
+}
+document.addEventListener('DOMContentLoaded', ensureHeaderDropdownHover);
+window.addEventListener('popstate', ensureHeaderDropdownHover);
 
 
 // --- Footer Loader ---
@@ -724,13 +905,28 @@ function initMobileMenu(){
 
 // JS fallback for dropdown hover (helps if CSS hover is unreliable)
 function initHeaderDropdownHover(){
+  // Use a WeakMap to track listeners for each nav-dropdown
+  if(!window._dropdownHoverListeners) window._dropdownHoverListeners = new WeakMap();
   const navDropdowns = document.querySelectorAll('.nav-dropdown');
   navDropdowns.forEach(nd => {
-    nd.addEventListener('mouseenter', () => nd.classList.add('open'));
-    nd.addEventListener('mouseleave', () => nd.classList.remove('open'));
-    // also support focus within for keyboard users
-    nd.addEventListener('focusin', () => nd.classList.add('open'));
-    nd.addEventListener('focusout', () => nd.classList.remove('open'));
+    // Remove previous listeners if present
+    const prev = window._dropdownHoverListeners.get(nd);
+    if(prev) {
+      nd.removeEventListener('mouseenter', prev.mouseenter);
+      nd.removeEventListener('mouseleave', prev.mouseleave);
+      nd.removeEventListener('focusin', prev.focusin);
+      nd.removeEventListener('focusout', prev.focusout);
+    }
+    // Add new listeners
+    const mouseenter = () => nd.classList.add('open');
+    const mouseleave = () => nd.classList.remove('open');
+    const focusin = () => nd.classList.add('open');
+    const focusout = () => nd.classList.remove('open');
+    nd.addEventListener('mouseenter', mouseenter);
+    nd.addEventListener('mouseleave', mouseleave);
+    nd.addEventListener('focusin', focusin);
+    nd.addEventListener('focusout', focusout);
+    window._dropdownHoverListeners.set(nd, {mouseenter, mouseleave, focusin, focusout});
   });
 }
 
