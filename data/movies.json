@@ -9021,21 +9021,6 @@
       "link": "farzand-2018-movie.html"
     },
     {
-      "id": "s43",
-      "type": "webseries",
-      "industry" :"Hollywood",
-      "recomendation":"Featured",
-      "title": "Stranger Things (Season 1-5) Dual Audio [Hindi-English] WEB Series 480p | 720p | 1080p | 2160p WEB-DL ESub",
-      "seo-title": "Stranger Things (Season 1-5) Dual Audio [Hindi-English] WEB Series | ThisTV",
-      "description": "Download/Watch Stranger Things (Season 1-5) Dual Audio [Hindi-English] WEB Series Complete All Episodes Available in 480p & 720p & 1080p qualities. In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries. This series is based on Drama, Fantasy, Horror, Sci-Fi.",
-      "year": 2016,
-      "imdb": 8.6,
-      "genres": ["Drama","Fantasy","Horror","Sci-Fi"],
-      "poster": "https://m.media-amazon.com/images/M/MV5BNjRiMTA4NWUtNmE0ZC00NGM0LWJhMDUtZWIzMDM5ZDIzNTg3XkEyXkFqcGc@._V1_.jpg",
-      "seasons": 5,
-      "link": "stranger-things-season-1-5-web-series.html"
-    },
-    {
       "id": "m529",
       "type": "movie",
       "industry": "Hollywood",
@@ -11668,6 +11653,21 @@
       "poster": "https://m.media-amazon.com/images/M/MV5BMThmZTBiNWMtZTc3My00MTRkLWE5OTktYzIzMmEzY2YyYWI3XkEyXkFqcGc@._V1_FMjpg_UY576_.jpg",
       "runtime": "1h 47m",
       "link": "americana-2023-movie.html"
+    },
+    {
+      "id": "s43",
+      "type": "webseries",
+      "ott" :"NetFlix",
+      "recomendation":"Featured",
+      "title": "Stranger Things (Season 1-5) [VOL-2 Added] Dual Audio [Hindi-English] WEB Series 480p | 720p | 1080p | 2160p WEB-DL ESub",
+      "seo-title": "Stranger Things (Season 1-5) [VOL-2 Added] Dual Audio [Hindi-English] WEB Series | ThisTV",
+      "description": "Download/Watch Stranger Things (Season 1-5) [VOL-2 Added] Dual Audio [Hindi-English] WEB Series Complete All Episodes Available in 480p & 720p & 1080p qualities. In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries. This series is based on Drama, Fantasy, Horror, Sci-Fi.",
+      "year": 2016,
+      "imdb": 8.6,
+      "genres": ["Drama","Fantasy","Horror","Sci-Fi"],
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjRiMTA4NWUtNmE0ZC00NGM0LWJhMDUtZWIzMDM5ZDIzNTg3XkEyXkFqcGc@._V1_FMjpg_UY562_CR35,0,380,562_.jpg",
+      "seasons": 5,
+      "link": "stranger-things-season-1-5-web-series.html"
     }
 
 
