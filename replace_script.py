@@ -1,8 +1,8 @@
 import os
 
 # Define the old and new domains
-old_domain = "https://vidsrc-embed.ru/embed/movie/"
-new_domain = "https://vidsrc-embed.ru/embed/movie?imdb="
+old_domain = "https://new10.gdflix.net"
+new_domain = "https://new12.gdflix.net"
 
 # Traverse through all directories and files
 for root, dirs, files in os.walk("."):
