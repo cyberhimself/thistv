@@ -11,7 +11,7 @@
     <a href="" target="_blank"><button class="button button1"><i class="fa-solid fa-file-video"></i> Pixeldrain</button></a>
 
 # Current Domains
-https://new.gdflix.app
+https://new1.gdflix.app
 https://vcloud.zip
 https://new4.filepress.cloud
 https://vik1ngfile.site
