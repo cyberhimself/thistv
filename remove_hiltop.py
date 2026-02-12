@@ -2,7 +2,7 @@ import os
 
 remove_code = """<script
   type="text/javascript"
-  src="//intimidatingsideway.com/ac/eb/fc/acebfc9fa5b1cc2b325c4c5449b1809d.js"
+  src="//thinnerwithdrewforbear.com/62/22/f2/6222f2cce59d808691ba1fd0ae7c016f.js"
 ></script>"""
 
 root_folder = "."  # Current directory
